@@ -18,4 +18,4 @@ jobs:
           id: 66916
           key:  fc1164a1-329d-44bb-827f-8c502b32c53f
           secret: 365819fb-d280-4085-a7fd-73c201147e0d
-          workspace: ./sample.diagram
+          workspace: sample.diagram
