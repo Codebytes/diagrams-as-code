@@ -1,0 +1,21 @@
+name: sctructurizr-cli  # feel free to pick your own name
+
+on: [push, pull_request]
+
+jobs:
+  structurizr-cli:
+    runs-on: ubuntu-latest
+    name: Run structurizr-cli
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run structurizr-cli action
+        uses: aidmax/structurizr-cli-action@v0.2.0
+        id: test
+        with:
+          id: 66916
+          key:  fc1164a1-329d-44bb-827f-8c502b32c53f
+          secret: 365819fb-d280-4085-a7fd-73c201147e0d
+          workspace: ./sample.diagram
